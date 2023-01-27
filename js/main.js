@@ -150,7 +150,7 @@ function changeNumberOfUnits(action, id) {
                 numberOfUnits -= 1;
             } else if (action === 'plus') {
                 numberOfUnits += 1;
-            }
+            } 
         }
 
         return {
