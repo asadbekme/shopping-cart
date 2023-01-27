@@ -4,131 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
-
+    <title>Shopping cart</title>
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
     <!-- custom css file link -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
     <!-- Header section starts -->
     <header class="header">
-
         <div class="container">
-
-            <div class="logo"> 
-                <a href="./index.html"><i class="fa-brands fa-shopify"></i>MacBro</a>  
+            <div class="header__logo"> 
+                <a href="./index.html">
+                    <i class="fa-brands fa-shopify"></i>
+                    MacBro
+                </a>  
             </div>
-
-            <nav class="navbar">
+            <nav class="header__navbar">
                 <a href="#home">home</a>
-                <a href="products">products</a>
+                <a href="product">products</a>
                 <a href="#menu">menu</a>
                 <a href="#order">order</a>
                 <a href="#popular">popular</a>
                 <a href="#blogs">blogs</a>
             </nav>
-
-            <div class="icons">
+            <div class="header__icons">
                 <div id="menu-btn" class="fas fa-bars"></div>
                 <div id="login-btn" class="fas fa-user"></div>
                 <div id="heart-btn" class="fa-solid fa-heart"></div>
                 <div id="cart-btn" class="fas fa-shopping-cart"></div>
             </div>
-            
+
             <!-- Cart section -->
-            <div class="cart">
-
-                <div class="heading"> <i class="fa-solid fa-bag-shopping"></i> Cart <span class="counter">0</span> </div>
-
-                <div class="cart-header">
-                    <div class="column1">Item</div>
-                    <div class="column2">Unit price</div>
-                    <div class="column3">Units</div>
+            <div class="header__cart">
+                <div class="header__cart--title"> 
+                    <i class="fa-solid fa-bag-shopping"></i> 
+                    Cart 
+                    <span class="header__cart--counter">0</span> 
                 </div>
-
-                <div class="cart-items">
-                <!-- <div class="cart-item">
+                <div class="header__cart--body">
+                    <div class="header__cart--column">Item</div>
+                    <div class="header__cart--column">Unit price</div>
+                    <div class="header__cart--column">Units</div>
+                </div>
+                <div class="header__cart--items">
+                    <!-- <div class="header__cart--item">
                         <div class="item-info">
                             <img src="./images/product 2.jfif" alt="product image">
                             <h4>iPhone 13 Pro</h4>
                         </div>
 
-                        <div class="unit-price"> <small>$</small>999</div>
+                        <div class="unit-price"><small>$</small>999</div>
 
                         <div class="units">
-                            <div class="btn minus">-</div>
-                            <div class="number">1</div>
-                            <div class="btn plus">+</div>           
+                            <button class="btn minus"> - </button>
+                            <div class="number"> 1 </div>
+                            <button class="btn plus"> + </button>           
                         </div>
                     </div> -->
                 </div>
-
-                <div class="cart-footer">
-                    <div class="subtotal">
+                <div class="header__cart--footer">
+                    <div class="header__cart--subtotal">
                         Subtotal (0 items): $0
                     </div>
-
-                    <div class="checkout">
+                    <div class="header__cart--checkout">
                         Proceed to checkout
                     </div>
                 </div>
-
-                <button type="button" class="btn-buy btn">Buy Now</button>
-
+                <button type="button" class="btn header__cart--btn">Buy Now</button>
                 <i class="fa-solid fa-xmark" id="close-cart"></i>
             </div>
-
+            <!-- /Cart section -->
         </div>
-
     </header>
     <!-- /Header section ends -->
-
-    <!-- Products section starts -->
-    <section class="products" id="products">
-
+    
+    <!-- Product section starts -->
+    <section class="product" id="product">
         <div class="container">
-
-            <div class="products-container">
-                
-            <!--<div class="product">
+            <div class="product__items">
+                <!-- <div class="product__item">
                     <a href="#" class="fa-solid fa-heart"></a>
-                    <div class="image">
+                    <div class="product__image">
                         <img src="./images/product 1.png" alt="product image">
                     </div>
-                    <div class="content">
-                        <h3 class="product-title">iPhone 13</h3>
-                        <div class="stars">
+                    <div class="product__content">
+                        <h3 class="product__title">iPhone 13</h3>
+                        <div class="product__stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
-                            <span> (50) </span>
+                            <span>(50)</span>
                         </div>
-                        <div class="price">from $799 <span>$800</span> </div>
-                        <button class="btn add-cart"> add to cart </button>
+                        <div class="product__price">
+                            from $799 
+                            <span>$800</span> 
+                        </div>
+                        <button class="btn add-cart">add to cart</button>
                     </div>
                 </div> -->
-
             </div>
-
         </div>
-
     </section>
-    <!-- Products section ends -->
-
-
-
+    <!-- Product section ends -->
 
 
 
     <!-- custom js files link -->
     <script src="./js/products.js"></script>
     <script src="./js/main.js"></script>
-
 </body>
 </html>
